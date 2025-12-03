@@ -8,7 +8,7 @@ anything = 25;
 anything;
 let myValue = 'Hello TypeScript';
 const valueLength = myValue.length;
-console.log(valueLength);
+// console.log(valueLength)
 const kgToGMConvertor = (input) => {
     return typeof input === 'number' ? input * 1000 : typeof input === 'string' ? (() => {
         const [value] = input.split(' ');

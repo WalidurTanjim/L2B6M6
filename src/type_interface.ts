@@ -34,3 +34,23 @@ const NewUserWithRole: NewUserRole = {
 }
 
 
+// function
+type AddFunction = (num1: number, num2: number) => number;
+
+interface AddFunctionInterface {
+    (num1: number, num2: number): number;
+}
+
+const addFunction: AddFunctionInterface = (num1, num2) => {
+    return num1 * num2;
+};
+
+
+// array
+type FriendsArray = string[];
+
+interface FriendsArrayInterface {
+    [index: number]: string;
+}
+
+const friendsArray: FriendsArrayInterface = ['A', 'B', 'C', 'D', 'E'];
