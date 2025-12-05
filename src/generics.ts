@@ -65,7 +65,7 @@ const booleanArary: GenericsArray<boolean> = [ true, false, true, true, false ];
 
 
 // generics with function
-interface FunctionInterface {
+type FunctionType = {
     brand: string;
     name: string;
     releasedYear: string;
@@ -76,7 +76,7 @@ interface FunctionInterface {
 
 type GenericsFunction<T> = Array<T>;
 
-const genericsFunctionArray: GenericsFunction<FunctionInterface> = [
+const genericsFunctionArray: GenericsFunction<FunctionType> = [
     { brand: 'ASUS', name: 'TUF Gaming', releasedYear: '2023', model: 'A15 FA506N', price: '95500', isAvailable: true },
     { brand: 'ASUS', name: 'TUF Gaming', releasedYear: '2023', model: 'A16 FA506NR', price: '115500', isAvailable: true }
 ];
