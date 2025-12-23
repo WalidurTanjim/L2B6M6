@@ -17,3 +17,6 @@ const genericsFunctionArray = [
     { brand: 'ASUS', name: 'TUF Gaming', releasedYear: '2023', model: 'A15 FA506N', price: '95500', isAvailable: true },
     { brand: 'ASUS', name: 'TUF Gaming', releasedYear: '2023', model: 'A16 FA506NR', price: '115500', isAvailable: true }
 ];
+const addFunction = (num1, num2) => {
+    return num1 + num2;
+};

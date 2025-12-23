@@ -1,35 +1,36 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// poorDeveloper
 const poorDeveloper = {
-    name: "Mr. Poor",
-    salary: 20,
+    name: "MR. Poor",
+    salary: 20000,
     device: {
-        brand: 'HP',
+        brand: "HP",
         model: '245 G7',
-        releasedYear: '2020'
+        price: 42000
     },
     smartWatch: {
-        heartRate: '200',
+        heartRate: true,
         stopWatch: true
+    },
+    bike: {
+        brand: "YAMAHA",
+        model: "V4"
     }
 };
-// richDeveloper
-const richDeveloper = {
-    name: "Mr. Rich",
-    salary: 2000,
+const RichDeveloper = {
+    name: "MR. Rich",
+    salary: 85000,
     device: {
-        brand: 'ASUS',
-        model: 'TUF Gaming A15 NA506F',
-        releasedYear: '2023'
+        brand: "HP",
+        model: '245 G7',
+        price: 42000
     },
     smartWatch: {
-        heartRate: '200',
-        callSupport: true,
+        heartRate: true,
+        call: true,
+        camera: true,
         calculator: true,
-        AIFeature: true,
-    }
+        AI: true,
+    },
+    bike: null
 };
-// tuple
-const tupleArray = ["TypeScript", 88.99, true];
-console.log(tupleArray);
