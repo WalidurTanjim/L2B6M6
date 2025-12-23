@@ -4,63 +4,62 @@ interface Developer<T, X = null> {
     device: {
         brand: string;
         model: string;
-        price: number;
+        releasedYear: string;
     };
     smartWatch: T;
-    bike?: X;
+    bike?: X
 }
 
 interface PoorSmartWatch {
-    heartRate: boolean;
+    heartRate: string;
     stopWatch: boolean;
 }
 
 interface RichSmartWatch {
-    heartRate: boolean;
-    call: boolean;
-    camera: boolean;
+    heartRate: string;
+    stopWatch: boolean;
+    callSupport: boolean;
     calculator: boolean;
-    AI: boolean;
+    AIFeature: boolean;
 }
 
 interface PoorBike {
-    brand: string;
     model: string;
+    engineCapacity: string;
 }
 
 const poorDeveloper: Developer<PoorSmartWatch, PoorBike> = {
     name: "MR. Poor",
     salary: 20000,
     device: {
-        brand: "HP",
-        model: '245 G7',
-        price: 42000
+        brand: "Lenovo",
+        model: "G512 R72",
+        releasedYear: "2020"
     },
     smartWatch: {
-        heartRate: true,
+        heartRate: '120',
         stopWatch: true
     },
     bike: {
-        brand: "YAMAHA",
-        model: "V4"
+        model: 'V4',
+        engineCapacity: '165'
     }
 }
 
-
-const RichDeveloper: Developer<RichSmartWatch> = {
+const richDeveloper: Developer<RichSmartWatch> = {
     name: "MR. Rich",
-    salary: 85000,
+    salary: 75000,
     device: {
-        brand: "HP",
-        model: '245 G7',
-        price: 42000
+        brand: "ASUS",
+        model: "TUF Gaming A15",
+        releasedYear: "2024"
     },
     smartWatch: {
-        heartRate: true,
-        call: true,
-        camera: true,
+        heartRate: '120',
+        stopWatch: true,
+        callSupport: true,
         calculator: true,
-        AI: true,
+        AIFeature: true
     },
     bike: null
 }

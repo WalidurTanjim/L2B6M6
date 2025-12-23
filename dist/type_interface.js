@@ -1,16 +1,17 @@
 "use strict";
+// // type alias
+// type UserInfo = {
+//     name: string;
+//     age: number;
+// };
 Object.defineProperty(exports, "__esModule", { value: true });
-const newUser = {
-    name: "Walidur Tanjim",
+const SingleUser = {
+    name: 'Walidur Tanjim',
     age: 25,
-    role: "admin"
-};
-const NewUserWithRole = {
-    name: "Walidur Rahman Tanjim",
-    age: 25,
-    role: "moderator"
+    isStudent: true,
+    role: "user"
 };
 const addFunction = (num1, num2) => {
     return num1 * num2;
 };
-const friendsArray = ['A', 'B', 'C', 'D', 'E'];
+const stringArray = ['A', 'B', 'C', 'D', 'E'];

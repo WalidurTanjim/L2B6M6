@@ -94,6 +94,7 @@ const addFunction: AddFunctionInterface = (num1, num2) => {
 // interface with array
 type StringArrayType = string[];
 
+// index signature
 interface StringArrayInterface {
     [index: number]: string;
 }
