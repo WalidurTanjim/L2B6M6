@@ -11,5 +11,5 @@ const student1 = {
     name: "Walidur Tanjim",
     email: "walidurtanjim.1@gmail.com"
 };
-const reuslt = enrollStudentToCourse(student1);
-console.log(reuslt);
+const result = enrollStudentToCourse(student1);
+console.log(result);
