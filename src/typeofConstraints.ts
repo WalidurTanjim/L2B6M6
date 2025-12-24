@@ -120,7 +120,7 @@ const myStudent: StudentType = {
 }
 
 // get value of property from object
-const getValueOfPropertyFromObject = <T>( obj: T, key: keyof T ) => {
+const getValueOfPropertyFromObject = <T, K extends keyof T>( obj: T, key: K ): T[K] => {
     return obj[key];
 }
 
