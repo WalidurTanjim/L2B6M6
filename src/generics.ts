@@ -13,6 +13,11 @@ type GenericsArray<T> = Array<T>;
 // const booleanArray: Array<boolean> = [true, false, false, true, true];
 // const booleanArray: GenericsArray<boolean> = [true, false, false, true, true];
 
+
+
+
+
+// array of objects
 interface FunctionInterface {
     brand: string;
     model: string;
@@ -24,3 +29,11 @@ const functionArray: GenericsArray<FunctionInterface> = [
     { brand: 'HP', model: '245 G7', price: 42000 }
 ]
 // console.log(functionArray);
+
+
+
+
+// tuple with generics
+type Coordinates<X, Y, Z> = [X, Y, Z];
+const coordinates1: Coordinates<string, number, boolean> = ["Walidur Tanjim", 25, false];
+const coordinates2: Coordinates<string, string, number> = ['Walidur Tanjim', 'BackEnd Developer', 100000];
