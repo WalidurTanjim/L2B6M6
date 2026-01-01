@@ -11,7 +11,7 @@ const student1 = {
     name: "Walidur Tanjim",
     email: "walidur.tanjim@gmail.com",
     hasComputer: true,
-    hasWifi: true
+    hasWifi: true,
 };
 const resultStudent1 = enrollStudentToCourse(student1);
 console.log(resultStudent1);

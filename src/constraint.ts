@@ -3,6 +3,7 @@ interface StudentType {
     id: number;
     name: string;
     email: string;
+    preEnrolled?: boolean;
 }
 
 const enrollStudentToCourse = <T extends StudentType>(studentInfo: T): T & { course: string } => {
@@ -17,7 +18,7 @@ const student1 = {
     name: "Walidur Tanjim",
     email: "walidur.tanjim@gmail.com",
     hasComputer: true,
-    hasWifi: true
+    hasWifi: true,
 }
 const resultStudent1 = enrollStudentToCourse(student1);
 console.log(resultStudent1);
