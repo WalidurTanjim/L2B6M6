@@ -52,9 +52,10 @@ interface StudentType {
     hasWifi?: boolean;
 }
 
-const enrollToCourse = <T extends StudentType>(studentInfo: T): T & { course: string } => {
+const enrollToCourse = <T extends StudentType>(studentInfo: T): T & { course: string, duration: string } => {
     return {
         course: "Next Level Web Development",
+        duration: "6 Months",
         ...studentInfo
     }
 };
