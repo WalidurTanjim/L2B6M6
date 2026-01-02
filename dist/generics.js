@@ -7,3 +7,5 @@ const functionArray = [
 ];
 const coordinates1 = ["Walidur Tanjim", 25, false];
 const coordinates2 = ['Walidur Tanjim', 'BackEnd Developer', 100000];
+const coordinates3 = ["Walidur Tanjim", 25, { brand: "ASUS", model: "TUF Gaming A15 FA506N", price: 94000 }];
+console.log(coordinates3);

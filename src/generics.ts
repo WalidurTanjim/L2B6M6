@@ -37,3 +37,5 @@ const functionArray: GenericsArray<FunctionInterface> = [
 type Coordinates<X, Y, Z> = [X, Y, Z];
 const coordinates1: Coordinates<string, number, boolean> = ["Walidur Tanjim", 25, false];
 const coordinates2: Coordinates<string, string, number> = ['Walidur Tanjim', 'BackEnd Developer', 100000];
+const coordinates3: Coordinates<string, number, FunctionInterface> = ["Walidur Tanjim", 25, { brand: "ASUS", model: "TUF Gaming A15 FA506N", price: 94000 }];
+console.log(coordinates3);
